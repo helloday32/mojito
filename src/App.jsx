@@ -5,7 +5,7 @@ import React from 'react';
 import {ScrollTrigger , SplitText } from "gsap/all";
 import gsap from "gsap";
 import Navbar from "./componets/Navbar.jsx";
-
+import Hero from "./componets/Hero.jsx";
 gsap.registerPlugin(ScrollTrigger , SplitText);
 
 
@@ -14,6 +14,8 @@ export default function App(props) {
     return (
         <main className="constructor">
             < Navbar />
+            < Hero />
+            <div className="h-dvh w-full bg-black"></div>
         </main>
     );
 }
